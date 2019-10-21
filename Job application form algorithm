@@ -1,0 +1,19 @@
+#I made an algorithm that can be used to identify candidates at the desired level
+# The decisive factor here for me was the city and age
+print("Job application form")
+name=input("enter your name:")
+lastname=input("enter your last name:")
+age=int(input("enter your age:"))
+city=input("The city which you are living:")
+graduated=input("graduated from:")
+list=[name,lastname,age,city,graduated]
+print("enter your name:{}\n enter your last name:{}\n enter your age:{}\n The city which you are living:{}\n graduated from:{}\n ".format(list[0],list[1],list[2],list[3],list[4]))
+print("saving your information ...")
+if (city==("istanbul,İSTANBUL,ankara,izmir,bursa")):
+    print("job application saved")
+else:
+    print("Failed to save job application,city​not convenient")
+if age>=18:
+    print("suitable for your age")
+else:
+    print("Failed to save job application,your age is not appropriate")
