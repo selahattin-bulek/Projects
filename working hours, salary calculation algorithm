@@ -1,0 +1,12 @@
+#I made an algorithm to charge wages per hour and per hour using input to calculate gross wage
+#The wage is 40 and an hour and a half for half the hour, the normal rate for the hourly wage for all hours working over 40 hours
+def computepay(h,r):
+    if h>40:
+        rate1 = (r*1.5)*(h-40)
+    return ((h-5)*r)+rate1
+
+hrs = float(raw_input("Enter Hours:"))
+rate = float(raw_input("Enter Rate:"))
+
+p = computepay(hrs,rate)
+print (p)
