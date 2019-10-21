@@ -1,0 +1,25 @@
+#Coffee machine
+print("choose your coffee")
+menu=print("Filter coffe (1)\n Sugared coffe (2)\n Latte(3)\n"),
+
+unswer=input()
+while(True):
+    if(unswer =="1" ):
+        print("preparing coffee...")
+        #200 ml of water is added to the coffee
+        print("Take your coffee ")
+        break
+
+    elif(unswer=="2"):
+        print("preparing coffee ...")
+        # Coffee 5 gram , 200 ml water, 2 gram sugar is added to the tumbler
+        print("Take your coffee")
+        break
+    elif(unswer=="3"):
+        print("preparing coffee...")
+        #3 grams of sugar, 200 ml of water, 5 grams of coffee
+        print("Take your coffee")
+        break
+    else:
+        print("return to the menu")
+        break
