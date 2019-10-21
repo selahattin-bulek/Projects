@@ -1,0 +1,15 @@
+import requests
+from  bs4 import BeautifulSoup
+
+sputurl="https://www.imdb.com/chart/top"
+r = requests.get(sputurl)
+soup=BeautifulSoup(r.content,"html.parser")
+gveri=soup.find_all("table",{"class":"chart full-width"})
+table=(gveri[0].contents)[len(gveri[0].contents)-2]
+
+table=table.find_all("tr")
+for film in table:
+    filmcap=film.find_all("td",{"class" : "titleColumn , ratingColumn imdbRating"})
+    filmname=filmcap[0].text
+    print(filmname)
+    print("------------")
